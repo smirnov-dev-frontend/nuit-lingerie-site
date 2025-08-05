@@ -5,14 +5,10 @@
             width: 1160px;
             height: 874px;
             color: #E8E8E8;
-            border-bottom: 1px solid #000;
             position: relative;
       }
 	&__title {
-            font-family: Italiana;
             font-size: 270px;
-            position: relative;
-            z-index: 3;
             margin: 83px 0 0 0;
 
 	}
@@ -36,4 +32,9 @@
             left: 361px;
             z-index: 0;
 	}
+}
+.title {
+      font-family: Italiana;
+      position: relative;
+      z-index: 3;
 }
