@@ -1,15 +1,39 @@
 .start-block {
       &__body {
-         width: 1160px;
+            display: block;
+            margin: 0 auto;
+            width: 1160px;
+            height: 874px;
+            color: #E8E8E8;
+            border-bottom: 1px solid #000;
+            position: relative;
       }
-//		&__title {
-//		}
+	&__title {
+            font-family: Italiana;
+            font-size: 270px;
+            position: relative;
+            z-index: 3;
+            margin: 83px 0 0 0;
 
-//		&__subtitle {
-//		}
+	}
 
-//		&__image {
-//		}
-//}
-//.title {
+      &__subtitle {
+            font-family: 'Poiret One', sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 64px;
+            width: 690px;
+            position: relative;
+            z-index: 100;
+	}
+
+      &__image {
+            display: inline-block;
+            width: 799px;
+            height: auto;
+            position: absolute;
+            top: 19px;
+            left: 361px;
+            z-index: 0;
+	}
 }
