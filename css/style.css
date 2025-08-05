@@ -139,6 +139,11 @@ h1, h2, h3, h4, h5, h6 {
 .site-header__lk-link {
   margin-right: 15px;
 }
+
+.start-block__body {
+  width: 1160px;
+}
+
 body {
   margin: 0;
   padding: 0;
