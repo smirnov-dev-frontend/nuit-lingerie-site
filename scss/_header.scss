@@ -1,0 +1,86 @@
+.site-header {
+      &__body {
+         width: 1131px;
+         height: 120px;
+         margin: 0 auto;
+         border: 1px solid #000;
+
+      }
+		&__menu-burger {
+         display:inline-block;
+         vertical-align: top;
+         margin: 51px 55px 0 0;
+         width: 41px;
+         height: 20px;
+		}
+      &__icon-list {
+         display: inline-block;
+      }
+
+		&__lang {
+         display: inline-block;
+         font-family: Italiana;
+         font-size: 32px;
+         width: 95px;
+         height: 23px;
+         margin: 45px 0 0 0;
+		}
+
+		&__lang-name {
+         margin: 0 auto 15px;
+         color: #E8E8E8;
+         text-transform: uppercase;
+		}
+
+		&__lang-icon {
+         display: inline-block;
+         vertical-align: middle;
+         margin-top: -6px;
+		}
+
+		&__menu {
+         font-family: 'Poiret One';
+         display: inline-block;
+         vertical-align: top;
+         width: 641px;
+         height: 42px;
+         margin: 42px 57px 0 161px;
+		}
+
+		&__item {
+         color: #E8E8E8;
+         font-size: 28px;
+         margin-right: 78px;
+         &:last-child {
+            margin-right: 0;
+         }
+		}
+      &__item--hover {
+         color: #2F2626;
+         font-size: 36px;
+      }
+
+		&__lk {
+         vertical-align: top;
+         font-size: 0;
+         display: inline-block;
+         width: 68px;
+         height: 28px;
+         margin: 50px 0 0 0;
+		}
+
+		&__lk-link {
+         margin-right: 15px;
+		}
+
+		&__lk-icon {
+		}
+
+		&__basket-link {
+		}
+
+		&__basket-icon {
+		}
+}
+.icon-link {
+}

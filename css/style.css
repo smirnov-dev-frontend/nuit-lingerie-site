@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Poiret+One&display=swap");
 /*Обнуление*/
 * {
   padding: 0;
@@ -73,3 +74,89 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+.site-header__body {
+  width: 1131px;
+  height: 120px;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+.site-header__menu-burger {
+  display: inline-block;
+  vertical-align: top;
+  margin: 51px 55px 0 0;
+  width: 41px;
+  height: 20px;
+}
+.site-header__icon-list {
+  display: inline-block;
+}
+.site-header__lang {
+  display: inline-block;
+  font-family: Italiana;
+  font-size: 32px;
+  width: 95px;
+  height: 23px;
+  margin: 45px 0 0 0;
+}
+.site-header__lang-name {
+  margin: 0 auto 15px;
+  color: #E8E8E8;
+  text-transform: uppercase;
+}
+.site-header__lang-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -6px;
+}
+.site-header__menu {
+  font-family: "Poiret One";
+  display: inline-block;
+  vertical-align: top;
+  width: 641px;
+  height: 42px;
+  margin: 42px 57px 0 161px;
+}
+.site-header__item {
+  color: #E8E8E8;
+  font-size: 28px;
+  margin-right: 78px;
+}
+.site-header__item:last-child {
+  margin-right: 0;
+}
+.site-header__item--hover {
+  color: #2F2626;
+  font-size: 36px;
+}
+.site-header__lk {
+  vertical-align: top;
+  font-size: 0;
+  display: inline-block;
+  width: 68px;
+  height: 28px;
+  margin: 50px 0 0 0;
+}
+.site-header__lk-link {
+  margin-right: 15px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #767778;
+}
+
+.wrapper {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.content {
+  width: 1440px;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+.site-main {
+  display: none;
+}

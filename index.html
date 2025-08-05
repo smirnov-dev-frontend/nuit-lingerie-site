@@ -11,94 +11,104 @@
 </head>
 
 <body>
-	<div class="content">
-		<header class="site-header">
-			<!-- Меню бургер пока сделаю как просто ссылку-иконку-->
-			<a href="#" class="site-header__menu-burger icon-link">
-				<img src="img/site-header/icons/list.svg" alt="меню-бургер" class="site-header__icon-list">
-			</a>
-			<!--Выпадающий список с языками сделаю пока как просто блок-->
-			<div class="site-header__lang">
-				<span class="site-header__lang-name">rus</span>
-				<img src="img/site-header/icons/lang.svg" alt="стрелочка для выпадающего списка"
-					class="site-header__lang-icon">
-			</div>
-			<nav class="site-header__menu">
-				<a class="site-header__item">о нас</a>
-				<a class="site-header__item">каталог</a>
-				<a class="site-header__item">контакты</a>
-				<a class="site-header__item">адреса </a>
-			</nav>
-			<div class="site-header__lk">
-				<a href="#" class="site-header__lk-link icon-link">
-					<img src="img/site-header/icons/lk.svg" alt="личный кабинет" class="site-header__lk-icon">
-				</a>
-				<a href="#" class="site-header__basket-link icon-link">
-					<img src="img/site-header/icons/basket.svg" alt="корзина" class="site-header__basket-icon">
-				</a>
-			</div>
-		</header>
-		<main class="site-main">
-			<div class="start-block">
-				<p class="start-block__title title">Nuit</p>
-				<p class="start-block__subtitle">Ночь, которая делает тебя сияющей</p>
-				<!--Здесь задам картинку через img а не фоном, чтоды потом можно было анимировать-->
-				<img src="img/start-block/main-picture.jpg" alt="девушка" class="start-block__image">
-			</div>
-			<div class="description-1">
-				<p class="description-1__title title">Nuit</p>
-				<p class="description-1__text">
-					- это не просто нижнее бельё, это искусство, которое делает каждую женщину сияющей. Вдохновлённое магией
-					ночи, оно сочетает в себе роскошь, комфорт и загадочность. Каждая деталь создана, чтобы подчеркнуть твою
-					естественную красоту и подарить ощущение уверенности, которое остаётся с тобой и после полуночи.</p>
-				<!--Здесь задам картинку через img а не фоном, чтоды потом можно было анимировать-->
-				<img src="img/description-1/image.png" alt="девушка 2" class="description-1__image">
-			</div>
-			<div class="bestseller">
-				<div class="bestseller__title">Наши бестселлеры </div>
-				<div class="slider">
-					<div class="slider__item">
-						<img src="img/slider/item1.jpg" alt="комплект нижнего белья" class="slider__image">
+	<div class="wrapper">
+		<div class="content">
+			<header class="site-header">
+				<div class="site-header__body">
+					<!-- Меню бургер пока сделаю как просто ссылку-иконку-->
+					<a href="#" class="site-header__menu-burger icon-link">
+						<img src="img/site-header/icons/list.svg" alt="меню-бургер" class="site-header__icon-list">
+					</a>
+					<!--Выпадающий список с языками сделаю пока как просто блок-->
+					<div class="site-header__lang">
+						<span class="site-header__lang-name">rus</span>
+						<img src="img/site-header/icons/lang.svg" alt="стрелочка для выпадающего списка"
+							class="site-header__lang-icon">
 					</div>
-					<!--Тут создал модификатор, чтобы потом в css увеличить и добавить подпись с помощью псевдоэлемента-->
-					<div class="slider__item slider__item--active">
-						<img src="img/slider/item2.jpg" alt="комплект нижнего белья" class="slider__image">
-					</div>
-					<div class="slider__item">
-						<img src="img/slider/item3.jpg" alt="комплект нижнего белья" class="slider__image">
-					</div>
-					<div class="slider__item">
-						<img src="img/slider/item4.jpg" alt="комплект нижнего белья" class="slider__image">
-					</div>
-					<div class="slider__item">
-						<img src="img/slider/item5.jpg" alt="комплект нижнего белья" class="slider__image">
+					<nav class="site-header__menu">
+						<a href="#" class="site-header__item">о нас</a>
+						<a href="#" class="site-header__item site-header__item--hover">каталог</a>
+						<a href="#" class="site-header__item">контакты</a>
+						<a href="#" class="site-header__item">адреса </a>
+					</nav>
+					<div class="site-header__lk">
+						<a href="#" class="site-header__lk-link icon-link">
+							<img src="img/site-header/icons/lk.svg" alt="личный кабинет" class="site-header__lk-icon">
+						</a>
+						<a href="#" class="site-header__basket-link icon-link">
+							<img src="img/site-header/icons/basket.svg" alt="корзина" class="site-header__basket-icon">
+						</a>
 					</div>
 				</div>
-			</div>
-			<div class="description-2">
-				<p class="description-2__title title">Nuit</p>
-				<p class="description-2__text">
-					– это бельё, которое заботится о тебе. Мы создаём не только красивые, но и анатомически правильные
-					модели, которые идеально повторяют твои изгибы. Каждый шов, каждая деталь продуманы до мелочей, чтобы ты
-					чувствовала себя комфортно и уверенно в любое время суток. Красота и удобство – наш главный приоритет.
-				</p>
-				<!--Здесь задам картинку через img а не фоном, чтоды потом можно было анимировать-->
-				<img src="img/description-2/image.jpg" alt="девушка 2" class="description-2__image">
-			</div>
-			<div class="sets">
-				<!--При наведении элемент увеличивается и появляется подпись-->
-				<div class="sets__item">
-					<img src="img/sets/lingerie-preview.png" alt="сет белья" class="sets__image-1">
-					<a href="#" class="sets__link">Ensemble de lingerie</a>
+			</header>
+
+			<main class="site-main">
+				<div class="start-block">
+					<div class="start-block__body">
+						<p class="start-block__title title">Nuit</p>
+						<p class="start-block__subtitle">Ночь, которая делает тебя сияющей</p>
+						<!--Здесь задам картинку через img а не фоном, чтоды потом можно было анимировать-->
+						<img src="img/start-block/image.jpg" alt="девушка" class="start-block__image">
+					</div>
 				</div>
-				<div class="sets__item">
-					<img src="img/sets/bain-preview.png" alt="сет купальников" class="sets__image-2">
-					<a href="#" class="sets__link-2">Maillot de bain</a>
+				<div class="description-1">
+					<p class="description-1__title title">Nuit</p>
+					<p class="description-1__text">
+						- это не просто нижнее бельё, это искусство, которое делает каждую женщину сияющей. Вдохновлённое
+						магией
+						ночи, оно сочетает в себе роскошь, комфорт и загадочность. Каждая деталь создана, чтобы подчеркнуть
+						твою
+						естественную красоту и подарить ощущение уверенности, которое остаётся с тобой и после полуночи.</p>
+					<!--Здесь задам картинку через img а не фоном, чтоды потом можно было анимировать-->
+					<img src="img/description-1/image.jpg" alt="девушка 2" class="description-1__image">
 				</div>
-				<!--В будущем это будет ссылка и эта надпись лучше пусть будет псевдоэлементом-->
-				<p class="sets__title">Сеты изысканного белья </p>
-			</div>
-		</main>
+				<div class="bestseller">
+					<div class="bestseller__title">Наши бестселлеры </div>
+					<div class="slider">
+						<div class="slider__item">
+							<img src="img/slider/item1.jpg" alt="комплект нижнего белья" class="slider__image">
+						</div>
+						<!--Тут создал модификатор, чтобы потом в css увеличить и добавить подпись с помощью псевдоэлемента-->
+						<div class="slider__item slider__item--active">
+							<img src="img/slider/item2.jpg" alt="комплект нижнего белья" class="slider__image">
+						</div>
+						<div class="slider__item">
+							<img src="img/slider/item3.jpg" alt="комплект нижнего белья" class="slider__image">
+						</div>
+						<div class="slider__item">
+							<img src="img/slider/item4.jpg" alt="комплект нижнего белья" class="slider__image">
+						</div>
+						<div class="slider__item">
+							<img src="img/slider/item5.jpg" alt="комплект нижнего белья" class="slider__image">
+						</div>
+					</div>
+				</div>
+				<div class="description-2">
+					<p class="description-2__title title">Nuit</p>
+					<p class="description-2__text">
+						– это бельё, которое заботится о тебе. Мы создаём не только красивые, но и анатомически правильные
+						модели, которые идеально повторяют твои изгибы. Каждый шов, каждая деталь продуманы до мелочей, чтобы
+						ты
+						чувствовала себя комфортно и уверенно в любое время суток. Красота и удобство – наш главный приоритет.
+					</p>
+					<!--Здесь задам картинку через img а не фоном, чтоды потом можно было анимировать-->
+					<img src="img/description-2/image.jpg" alt="девушка 2" class="description-2__image">
+				</div>
+				<div class="sets">
+					<!--При наведении элемент увеличивается и появляется подпись-->
+					<div class="sets__item">
+						<img src="img/sets/lingerie-preview.png" alt="сет белья" class="sets__image-1">
+						<a href="#" class="sets__link">Ensemble de lingerie</a>
+					</div>
+					<div class="sets__item">
+						<img src="img/sets/bain-preview.png" alt="сет купальников" class="sets__image-2">
+						<a href="#" class="sets__link-2">Maillot de bain</a>
+					</div>
+					<!--В будущем  эта надпись лучше пусть будет псевдоэлементом-->
+					<p class="sets__title">Сеты изысканного белья </p>
+				</div>
+			</main>
+		</div>
 	</div>
 </body>
 
