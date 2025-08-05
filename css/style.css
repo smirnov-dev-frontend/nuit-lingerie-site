@@ -140,6 +140,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .start-block__body {
+  padding-top: 1px;
   display: block;
   margin: 0 auto;
   width: 1160px;
