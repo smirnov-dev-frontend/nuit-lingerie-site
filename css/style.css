@@ -295,6 +295,79 @@ h1, h2, h3, h4, h5, h6 {
   width: auto;
 }
 
+.sets__body {
+  padding-top: 1px;
+  height: 1040px;
+  width: 1159px;
+  margin: 0 auto;
+  position: relative;
+}
+.sets__item1 {
+  width: 561px;
+  height: 753px;
+  display: inline-block;
+  position: absolute;
+  top: 168px;
+  left: 0;
+}
+.sets__item2 {
+  width: 561px;
+  height: 753px;
+  display: inline-block;
+  position: absolute;
+  top: 168px;
+  right: 0;
+  padding-top: 1px;
+}
+.sets__image-1 {
+  position: absolute;
+  z-index: 0;
+}
+.sets__link {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  color: #FFFFFF;
+  font-family: Italiana;
+  font-size: 55px;
+  width: 483px;
+  height: 91px;
+  line-height: 91px;
+  text-align: center;
+  top: 45%;
+  left: 8.5%;
+  border-radius: 14px;
+  background-color: rgba(217, 217, 217, 0.2705882353);
+}
+.sets__image-2 {
+  position: absolute;
+  top: 85px;
+  width: 561px;
+  display: inline-block;
+}
+.sets__link-2 {
+  color: #FFFFFF;
+  position: relative;
+  z-index: 1;
+  font-family: Italiana;
+  font-size: 55px;
+  display: inline-block;
+  width: 400px;
+  height: 91px;
+  line-height: 91px;
+  text-align: center;
+  top: 45%;
+  left: 14%;
+  border-radius: 14px;
+  background-color: rgba(217, 217, 217, 0.2705882353);
+}
+.sets__title {
+  font-size: 32px;
+  font-family: "Poiret One", sans-serif;
+  color: #FFFFFF;
+  margin: 952px 0 0 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -309,8 +382,4 @@ body {
   width: 1440px;
   margin: 0 auto;
   border: 1px solid #000;
-}
-
-.sets {
-  display: none;
 }

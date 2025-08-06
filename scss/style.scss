@@ -4,6 +4,7 @@
 @use "_description-1";
 @use "_bestseller";
 @use "_description-2";
+@use "_sets";
 
 @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Poiret+One&display=swap');
 
@@ -24,10 +25,4 @@ body {
   width: 1440px;
   margin: 0 auto;
   border: 1px solid #000;
-}
-
-
-
-.sets {
-  display: none;
 }
