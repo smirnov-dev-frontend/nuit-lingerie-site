@@ -413,6 +413,114 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 112px 0 0;
 }
 
+.site-footer__body {
+  height: 580px;
+  width: 1158px;
+  margin: 0 auto;
+  padding-top: 1px;
+  position: relative;
+}
+.site-footer__logo {
+  font-size: 64px;
+  display: inline-block;
+  margin: 42px 221px 20px 0;
+  vertical-align: top;
+}
+.site-footer__order {
+  vertical-align: top;
+  display: inline-block;
+  width: 228px;
+  margin: 67px 70px 0 0;
+}
+.site-footer__subtitle {
+  font-size: 32px;
+  font-family: "Poiret One", sans-serif;
+  color: #2F2626;
+  word-spacing: -5px;
+  display: inline-block;
+  margin: 0 0 45px 0;
+}
+.site-footer__list {
+  font-family: "Poiret One", sans-serif;
+  font-size: 20px;
+  line-height: 200%;
+  color: #FFFFFF;
+}
+.site-footer__services {
+  display: inline-block;
+  margin: 67px 70px 0 0;
+  vertical-align: top;
+}
+.site-footer__services2 {
+  vertical-align: top;
+  display: inline-block;
+  margin: 67px 0 0 0;
+}
+.site-footer__sending-block {
+  display: inline-block;
+  height: 127px;
+  width: 281px;
+  position: absolute;
+  top: 145px;
+  left: 0;
+}
+.site-footer__sending-title {
+  font-family: "Poiret One", sans-serif;
+  font-size: 24px;
+  color: #FFFFFF;
+  margin: 0 0 29px 0;
+}
+.site-footer__email {
+  color: #FFFFFF;
+  display: inline-block;
+  width: 281px;
+  height: 52px;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #FFFFFF;
+  padding: 10px;
+  font-family: "Poiret One", sans-serif;
+}
+.site-footer__email::-webkit-input-placeholder {
+  color: #FFFFFF;
+  font-size: 28px;
+}
+.site-footer__email::-moz-placeholder {
+  color: #FFFFFF;
+  font-size: 28px;
+}
+.site-footer__email:-ms-input-placeholder {
+  color: #FFFFFF;
+  font-size: 28px;
+}
+.site-footer__email::-ms-input-placeholder {
+  color: #FFFFFF;
+  font-size: 28px;
+}
+.site-footer__email::placeholder {
+  color: #FFFFFF;
+  font-size: 28px;
+}
+.site-footer__contact {
+  display: inline-block;
+  height: 131px;
+  width: 394px;
+  font-size: 0;
+}
+.site-footer__contact-title {
+  font-family: "Poiret One", sans-serif;
+  font-size: 24px;
+  color: #FFFFFF;
+  margin: 0 0 38px 0;
+}
+.site-footer__contact-item {
+  display: inline-block;
+  margin: 0 37px 0 0;
+}
+.site-footer__contact-item:last-child {
+  margin-right: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -426,5 +534,4 @@ body {
 .content {
   width: 1440px;
   margin: 0 auto;
-  border: 1px solid #000;
 }

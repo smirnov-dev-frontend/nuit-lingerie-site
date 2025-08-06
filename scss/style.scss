@@ -6,6 +6,7 @@
 @use "_description-2";
 @use "_sets";
 @use "_advantages";
+@use "_footer";
 
 @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Poiret+One&display=swap');
 
@@ -25,5 +26,4 @@ body {
 .content {
   width: 1440px;
   margin: 0 auto;
-  border: 1px solid #000;
 }

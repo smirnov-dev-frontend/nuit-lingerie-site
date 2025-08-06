@@ -1,0 +1,108 @@
+.site-footer {
+
+		&__body {
+         height: 580px;
+         width: 1158px;
+         margin: 0 auto;
+         padding-top: 1px;
+         position: relative;
+		}
+
+		&__logo {
+         font-size: 64px;
+         display: inline-block;
+         margin: 42px 221px 20px 0;
+         vertical-align: top;
+		}
+
+		&__order {
+         vertical-align: top;
+         display: inline-block;
+         width: 228px;
+         margin: 67px 70px 0 0;
+
+		}
+
+		&__subtitle {
+         font-size: 32px;
+         font-family: 'Poiret One', sans-serif;
+         color: #2F2626;
+         word-spacing: -5px;
+         display: inline-block;
+         margin: 0 0 45px 0;
+		}
+
+		&__list {
+         font-family: 'Poiret One', sans-serif;
+         font-size: 20px;
+         line-height: 200%;
+         color: #FFFFFF;
+		}
+
+		&__services {
+         display: inline-block;
+         margin: 67px 70px 0 0;
+         vertical-align: top;
+		}
+
+		&__services2 {
+         vertical-align: top;
+         display: inline-block;
+         margin: 67px 0 0 0;
+		}
+
+		&__sending-block {
+         display: inline-block;
+         height: 127px;
+         width: 281px;
+         position: absolute;
+         top: 145px;
+         left: 0;
+		}
+
+		&__sending-title {
+         font-family: 'Poiret One', sans-serif;
+         font-size: 24px;
+         color: #FFFFFF;
+         margin: 0 0 29px 0;
+		}
+      &__email {
+         color: #FFFFFF;
+         display: inline-block;
+         width: 281px;
+         height: 52px;
+         font-size: 20px;
+         background-color: #00000000;
+         border: 1px solid #FFFFFF;
+         padding: 10px;
+         font-family: 'Poiret One', sans-serif;
+         &::placeholder {
+            color: #FFFFFF;
+            font-size: 28px;
+         }
+      }
+
+		&__contact {
+         display: inline-block;
+         height: 131px;
+         width: 394px;
+         font-size: 0;
+		}
+
+		&__contact-title {
+         font-family: 'Poiret One', sans-serif;
+         font-size: 24px;
+         color: #FFFFFF;
+         margin: 0 0 38px 0;
+		}
+
+		&__contact-item {
+         display: inline-block;
+         margin: 0 37px 0 0;
+         &:last-child {
+            margin-right: 0;
+         }
+		}
+
+}
+
