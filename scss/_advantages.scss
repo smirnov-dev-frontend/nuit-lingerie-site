@@ -1,0 +1,54 @@
+.advantages {
+
+		&__body {
+         background-color: #D9D9D9;
+         font-family: 'Poiret One', sans-serif;
+         height: 941px;
+         color: #2F2626;
+		}
+
+		&__content {
+         padding-top: 1px;
+         width: 1090px;
+         margin: 0 0 0 140px;
+		}
+
+		&__title {
+         font-size: 48px;
+         line-height: 130%;
+         width: 1090px;
+         margin: 131px 0 53px 0;
+         word-spacing: -7px;
+		}
+      &__items {
+         font-size: 0;
+      }
+
+		&__item-title {
+         font-size: 32px;
+         word-spacing: -5px;
+         margin: 0 0 24px 0;
+         text-shadow: 0 4px 4px #00000044;
+		}
+
+      &__item-text {
+         width: 468px;
+         margin-left: 5px;
+         font-size: 24px;
+         word-spacing: -5px;
+		}
+
+		&__item1, &__item2, &__item3, &__item4{
+         vertical-align: top;
+         display: inline-block;
+         width: 485px;
+		}
+      &__item1 {
+         margin: 0 112px 56px 0;
+      }
+
+		&__item3 {
+         margin: 0 112px 0 0;
+		}
+}
+

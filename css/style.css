@@ -368,6 +368,51 @@ h1, h2, h3, h4, h5, h6 {
   margin: 952px 0 0 0;
 }
 
+.advantages__body {
+  background-color: #D9D9D9;
+  font-family: "Poiret One", sans-serif;
+  height: 941px;
+  color: #2F2626;
+}
+.advantages__content {
+  padding-top: 1px;
+  width: 1090px;
+  margin: 0 0 0 140px;
+}
+.advantages__title {
+  font-size: 48px;
+  line-height: 130%;
+  width: 1090px;
+  margin: 131px 0 53px 0;
+  word-spacing: -7px;
+}
+.advantages__items {
+  font-size: 0;
+}
+.advantages__item-title {
+  font-size: 32px;
+  word-spacing: -5px;
+  margin: 0 0 24px 0;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.2666666667);
+}
+.advantages__item-text {
+  width: 468px;
+  margin-left: 5px;
+  font-size: 24px;
+  word-spacing: -5px;
+}
+.advantages__item1, .advantages__item2, .advantages__item3, .advantages__item4 {
+  vertical-align: top;
+  display: inline-block;
+  width: 485px;
+}
+.advantages__item1 {
+  margin: 0 112px 56px 0;
+}
+.advantages__item3 {
+  margin: 0 112px 0 0;
+}
+
 body {
   margin: 0;
   padding: 0;
