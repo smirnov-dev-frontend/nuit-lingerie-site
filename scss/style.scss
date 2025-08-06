@@ -3,6 +3,7 @@
 @use "_start-block";
 @use "_description-1";
 @use "_bestseller";
+@use "_description-2";
 
 @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Poiret+One&display=swap');
 
@@ -27,6 +28,6 @@ body {
 
 
 
-.description-2, .sets {
+.sets {
   display: none;
 }
