@@ -1,0 +1,60 @@
+.bestseller {
+
+		&__body {
+         height: 1168px;
+         width: 1395px;
+         margin: 0 auto;
+         border-bottom: 1px solid #000;;
+         padding-top: 1px;
+		}
+
+		&__title {
+         font-family: 'Poiret One', sans-serif;
+         color: #E8E8E8;
+         font-size: 96px;
+         margin: 203px 0 93px;
+         text-align: center;
+		}
+}
+.slider {
+
+   width: 1395px;
+   height: 631px;
+   margin: 0 auto;
+   padding-top: 3px;
+   font-size: 0;
+		&__item {
+         display: inline-block;
+         position: relative;
+         vertical-align: top;
+         margin-top: 53px;
+         border-radius: 8px;
+         overflow: hidden;
+         margin-right: 23px;
+         &:last-child {
+            margin-right: 0;
+         }
+		}
+
+		&__image {
+         width: 245px;
+         height: auto;
+		}
+      &__image--hover {
+         width: 100%;
+         height: auto;
+         border-radius: 8px;
+		}
+
+		&__item--hover {
+         width: 318px;
+         height: 631px;
+         margin-top: 0;
+         }
+      &__text {
+         font-family: 'Poiret One', sans-serif;
+         color: #E8E8E8;
+         font-size: 36px;
+         margin: 21px 0 0 7px;
+      }
+	}

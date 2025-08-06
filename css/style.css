@@ -210,6 +210,61 @@ h1, h2, h3, h4, h5, h6 {
   top: 160px;
 }
 
+.bestseller__body {
+  height: 1168px;
+  width: 1395px;
+  margin: 0 auto;
+  border-bottom: 1px solid #000;
+  padding-top: 1px;
+}
+.bestseller__title {
+  font-family: "Poiret One", sans-serif;
+  color: #E8E8E8;
+  font-size: 96px;
+  margin: 203px 0 93px;
+  text-align: center;
+}
+
+.slider {
+  width: 1395px;
+  height: 631px;
+  margin: 0 auto;
+  padding-top: 3px;
+  font-size: 0;
+}
+.slider__item {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  margin-top: 53px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-right: 23px;
+}
+.slider__item:last-child {
+  margin-right: 0;
+}
+.slider__image {
+  width: 245px;
+  height: auto;
+}
+.slider__image--hover {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.slider__item--hover {
+  width: 318px;
+  height: 631px;
+  margin-top: 0;
+}
+.slider__text {
+  font-family: "Poiret One", sans-serif;
+  color: #E8E8E8;
+  font-size: 36px;
+  margin: 21px 0 0 7px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -226,6 +281,6 @@ body {
   border: 1px solid #000;
 }
 
-.bestseller, .description-2, .sets, .slider {
+.description-2, .sets {
   display: none;
 }
