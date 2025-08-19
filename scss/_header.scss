@@ -1,75 +1,50 @@
-.site-header {
-      &__body {
-         width: 1131px;
-         height: 120px;
-         margin: 0 auto;
-
-
-      }
-		&__menu-burger {
-         display:inline-block;
-         vertical-align: top;
-         margin: 51px 55px 0 0;
-         width: 41px;
-         height: 20px;
+.header {
+      padding: 45px 0;
+      background-color: #767778;
+      color: #E8E8E8;
+		&__row {
+         display: flex;
+         align-items: center;
+         gap: 55px;
 		}
-      &__icon-list {
-         display: inline-block;
-      }
+
+		&__icon-list {
+         margin-right: auto;
+		}
 
 		&__lang {
-         display: inline-block;
-         font-family: Italiana;
-         font-size: 32px;
-         width: 95px;
-         height: 23px;
-         margin: 45px 0 0 0;
+         display: flex;
+         align-items: center;
+         gap: 14px;
 		}
 
 		&__lang-name {
-         margin: 0 auto 15px;
-         color: #E8E8E8;
+         font-family: 'Italiana';
+         font-weight: 400;
+         font-size: 32px;
          text-transform: uppercase;
 		}
 
-		&__lang-icon {
-         display: inline-block;
-         vertical-align: middle;
-         margin-top: -6px;
-		}
-
 		&__menu {
-         font-family: 'Poiret One';
-         display: inline-block;
-         vertical-align: top;
-         width: 641px;
-         height: 42px;
-         margin: 42px 57px 0 161px;
+         padding: 5px 0;
+         margin-left: auto;
+         display: flex;
+         justify-content: space-between;
+         align-items: start;
+         gap: 88px;
+         padding-right: 19px;
 		}
 
 		&__item {
-         color: #E8E8E8;
+         font-family: 'Poiret One';
+         font-style: normal;
+         font-weight: 400;
          font-size: 28px;
-         margin-right: 78px;
-         &:last-child {
-            margin-right: 0;
-         }
+         color: #E8E8E8;
+         //transition: transform 0.3s ease, color 0.3s ease; позже добавлю
 		}
-      &__item--hover {
+
+		&__item:hover {
+         //transform: scale(1.3); позже добавлю
          color: #2F2626;
-         font-size: 36px;
-      }
-
-		&__lk {
-         vertical-align: top;
-         font-size: 0;
-         display: inline-block;
-         width: 68px;
-         height: 28px;
-         margin: 50px 0 0 0;
 		}
-
-		&__lk-link {
-         margin-right: 15px;
-		}
-   }
