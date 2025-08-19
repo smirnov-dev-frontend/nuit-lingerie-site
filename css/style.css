@@ -131,6 +131,12 @@ h1, h2, h3, h4, h5, h6 {
 .header__item:hover {
   color: #2F2626;
 }
+.header__lk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
 
 .start-block__body {
   padding-top: 1px;
