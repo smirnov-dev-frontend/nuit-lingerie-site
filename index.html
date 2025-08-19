@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
 	<link rel="stylesheet" href="css/style.css">
 	<title>Сайт нижнего белья Nuit</title>
@@ -12,233 +12,233 @@
 
 <body>
 	<div class="wrapper">
-		<div class="content">
-			<header class="site-header">
-				<div class="site-header__body">
+		<header class="header">
+			<div class="container">
+				<div class="header__row">
 					<!-- Меню бургер пока сделаю как просто ссылку-иконку-->
-					<a href="#" class="site-header__menu-burger icon-link">
-						<img src="img/site-header/icons/list.svg" alt="меню-бургер" class="site-header__icon-list">
+					<a href="#" class="header__menu-burger icon-link">
+						<img src="img/header/icons/list.svg" alt="меню-бургер" class="header__icon-list">
 					</a>
 					<!--Выпадающий список с языками сделаю пока как просто блок-->
-					<div class="site-header__lang">
-						<span class="site-header__lang-name">rus</span>
-						<img src="img/site-header/icons/lang.svg" alt="стрелочка для выпадающего списка"
-							class="site-header__lang-icon">
+					<div class="header__lang">
+						<span class="header__lang-name">rus</span>
+						<img src="img/header/icons/lang.svg" alt="стрелочка для выпадающего списка" class="header__lang-icon">
 					</div>
-					<nav class="site-header__menu">
-						<a href="#" class="site-header__item">о нас</a>
-						<a href="#" class="site-header__item site-header__item--hover">каталог</a>
-						<a href="#" class="site-header__item">контакты</a>
-						<a href="#" class="site-header__item">адреса </a>
+					<nav class="header__menu">
+						<a href="#" class="header__item">о нас</a>
+						<a href="#" class="header__item header__item--hover">каталог</a>
+						<a href="#" class="header__item">контакты</a>
+						<a href="#" class="header__item">адреса </a>
 					</nav>
-					<div class="site-header__lk">
-						<a href="#" class="site-header__lk-link icon-link">
-							<img src="img/site-header/icons/lk.svg" alt="личный кабинет" class="site-header__lk-icon">
+					<div class="header__lk">
+						<a href="#" class="header__lk-link icon-link">
+							<img src="img/header/icons/lk.svg" alt="личный кабинет" class="header__lk-icon">
 						</a>
-						<a href="#" class="site-header__basket-link icon-link">
-							<img src="img/site-header/icons/basket.svg" alt="корзина" class="site-header__basket-icon">
+						<a href="#" class="header__basket-link icon-link">
+							<img src="img/header/icons/basket.svg" alt="корзина" class="header__basket-icon">
 						</a>
 					</div>
 				</div>
-			</header>
+			</div>
+		</header>
 
-			<main class="site-main">
-				<div class="start-block">
-					<div class="start-block__body">
-						<p class="start-block__title title">Nuit</p>
-						<p class="start-block__subtitle">Ночь, которая делает тебя сияющей</p>
+		<main class="site-main">
+			<div class="start-block">
+				<div class="start-block__body">
+					<p class="start-block__title title">Nuit</p>
+					<p class="start-block__subtitle">Ночь, которая делает тебя сияющей</p>
+					<!--Здесь задам картинку через img а не фоном, чтоды потом можно было анимировать-->
+					<img src="img/start-block/image.jpg" alt="девушка" class="start-block__image">
+				</div>
+			</div>
+			<div class="description-1">
+				<div class="description-1__body">
+					<div class="description-1__content">
+						<p class="description-1__title title">Nuit</p>
+						<p class="description-1__text">
+							- это не просто нижнее бельё, это искусство, которое делает каждую женщину сияющей.
+							Вдохновлённое
+							магией
+							ночи, оно сочетает в себе роскошь, комфорт и загадочность. Каждая деталь создана, чтобы
+							подчеркнуть
+							твою
+							естественную красоту и подарить ощущение уверенности, которое остаётся с тобой и после полуночи.
+						</p>
 						<!--Здесь задам картинку через img а не фоном, чтоды потом можно было анимировать-->
-						<img src="img/start-block/image.jpg" alt="девушка" class="start-block__image">
+						<img src="img/description-1/image.jpg" alt="девушка 2" class="description-1__image">
 					</div>
 				</div>
-				<div class="description-1">
-					<div class="description-1__body">
-						<div class="description-1__content">
-							<p class="description-1__title title">Nuit</p>
-							<p class="description-1__text">
-								- это не просто нижнее бельё, это искусство, которое делает каждую женщину сияющей.
-								Вдохновлённое
-								магией
-								ночи, оно сочетает в себе роскошь, комфорт и загадочность. Каждая деталь создана, чтобы
-								подчеркнуть
-								твою
-								естественную красоту и подарить ощущение уверенности, которое остаётся с тобой и после полуночи.
-							</p>
-							<!--Здесь задам картинку через img а не фоном, чтоды потом можно было анимировать-->
-							<img src="img/description-1/image.jpg" alt="девушка 2" class="description-1__image">
+			</div>
+			<div class="bestseller">
+				<div class="bestseller__body">
+					<div class="bestseller__title">Наши бестселлеры </div>
+					<div class="slider">
+						<div class="slider__item">
+							<img src="img/slider/item1.jpg" alt="комплект нижнего белья" class="slider__image">
+						</div>
+						<!--Тут создал модификатор, чтобы потом в css увеличить и добавить подпись с помощью псевдоэлемента-->
+						<div class="slider__item slider__item--hover">
+							<img src="img/slider/item2.jpg" alt="комплект нижнего белья" class="slider__image--hover">
+							<p class="slider__text">сет 6500₽</p>
+						</div>
+						<div class="slider__item">
+							<img src="img/slider/item3.jpg" alt="комплект нижнего белья" class="slider__image">
+						</div>
+						<div class="slider__item">
+							<img src="img/slider/item4.jpg" alt="комплект нижнего белья" class="slider__image">
+						</div>
+						<div class="slider__item">
+							<img src="img/slider/item5.jpg" alt="комплект нижнего белья" class="slider__image">
 						</div>
 					</div>
 				</div>
-				<div class="bestseller">
-					<div class="bestseller__body">
-						<div class="bestseller__title">Наши бестселлеры </div>
-						<div class="slider">
-							<div class="slider__item">
-								<img src="img/slider/item1.jpg" alt="комплект нижнего белья" class="slider__image">
-							</div>
-							<!--Тут создал модификатор, чтобы потом в css увеличить и добавить подпись с помощью псевдоэлемента-->
-							<div class="slider__item slider__item--hover">
-								<img src="img/slider/item2.jpg" alt="комплект нижнего белья" class="slider__image--hover">
-								<p class="slider__text">сет 6500₽</p>
-							</div>
-							<div class="slider__item">
-								<img src="img/slider/item3.jpg" alt="комплект нижнего белья" class="slider__image">
-							</div>
-							<div class="slider__item">
-								<img src="img/slider/item4.jpg" alt="комплект нижнего белья" class="slider__image">
-							</div>
-							<div class="slider__item">
-								<img src="img/slider/item5.jpg" alt="комплект нижнего белья" class="slider__image">
-							</div>
-						</div>
+			</div>
+			<div class="description-2">
+				<div class="description-2__body">
+					<div class="description-2__content">
+						<p class="description-2__title title">Nuit</p>
+						<p class="description-2__text">
+							– это бельё, которое заботится о тебе. Мы создаём не только красивые, но и анатомически
+							правильные
+							модели, которые идеально повторяют твои изгибы. Каждый шов, каждая деталь продуманы до мелочей,
+							чтобы
+							ты
+							чувствовала себя комфортно и уверенно в любое время суток. Красота и удобство – наш главный
+							приоритет.
+						</p>
+						<!--Здесь задам картинку через img а не фоном, чтоды потом можно было анимировать-->
+						<img src="img/description-2/image.jpg" alt="девушка 2" class="description-2__image">
 					</div>
 				</div>
-				<div class="description-2">
-					<div class="description-2__body">
-						<div class="description-2__content">
-							<p class="description-2__title title">Nuit</p>
-							<p class="description-2__text">
-								– это бельё, которое заботится о тебе. Мы создаём не только красивые, но и анатомически
-								правильные
-								модели, которые идеально повторяют твои изгибы. Каждый шов, каждая деталь продуманы до мелочей,
-								чтобы
-								ты
-								чувствовала себя комфортно и уверенно в любое время суток. Красота и удобство – наш главный
-								приоритет.
-							</p>
-							<!--Здесь задам картинку через img а не фоном, чтоды потом можно было анимировать-->
-							<img src="img/description-2/image.jpg" alt="девушка 2" class="description-2__image">
-						</div>
+			</div>
+			<div class="sets">
+				<div class="sets__body">
+					<!--При наведении элемент увеличивается и появляется подпись-->
+					<div class="sets__item1">
+						<img src="img/sets/lingerie-preview.jpg" alt="сет белья" class="sets__image-1">
+						<a href="#" class="sets__link">Ensemble de lingerie</a>
 					</div>
-				</div>
-				<div class="sets">
-					<div class="sets__body">
-						<!--При наведении элемент увеличивается и появляется подпись-->
-						<div class="sets__item1">
-							<img src="img/sets/lingerie-preview.jpg" alt="сет белья" class="sets__image-1">
-							<a href="#" class="sets__link">Ensemble de lingerie</a>
-						</div>
-						<div class="sets__item2">
-							<img src="img/sets/bain-preview.jpg" alt="сет купальников" class="sets__image-2">
-							<a href="#" class="sets__link-2">Maillot de bain</a>
-						</div>
-						<!--В будущем  эта надпись лучше пусть будет псевдоэлементом-->
-						<p class="sets__title">Сеты изысканного белья </p>
+					<div class="sets__item2">
+						<img src="img/sets/bain-preview.jpg" alt="сет купальников" class="sets__image-2">
+						<a href="#" class="sets__link-2">Maillot de bain</a>
 					</div>
+					<!--В будущем  эта надпись лучше пусть будет псевдоэлементом-->
+					<p class="sets__title">Сеты изысканного белья </p>
 				</div>
-				<div class="advantages">
-					<div class="advantages__body">
-						<div class="advantages__content">
-							<div class="advantages__title">
-								4 главные причины, почему девушки выбирают именно нас:
-							</div>
-							<div class="advantages__items">
-								<div class="advantages__item1">
-									<div class="advantages__item-title">
-										1. Изысканное качество материалов
-									</div>
-									<div class="advantages__item-text">
-										Мы используем только высококачественные ткани, такие как мягкий хлопок, шелк и эластичное
-										кружево, чтобы обеспечить максимальный комфорт и долговечность. Наше белье приятно к телу
-										и не теряет форму даже после множества стирок.
-									</div>
+			</div>
+			<div class="advantages">
+				<div class="advantages__body">
+					<div class="advantages__content">
+						<div class="advantages__title">
+							4 главные причины, почему девушки выбирают именно нас:
+						</div>
+						<div class="advantages__items">
+							<div class="advantages__item1">
+								<div class="advantages__item-title">
+									1. Изысканное качество материалов
 								</div>
-								<div class="advantages__item2">
-									<div class="advantages__item-title">
-										2. Идеальная посадка и комфорт
-									</div>
-									<div class="advantages__item-text">
-										Каждый комплект разработан с учетом анатомических особенностей, чтобы подчеркнуть вашу
-										фигуру и обеспечить идеальную поддержку. Мы предлагаем широкий размерный ряд, чтобы каждая
-										женщина могла найти свой идеальный вариант.
-									</div>
+								<div class="advantages__item-text">
+									Мы используем только высококачественные ткани, такие как мягкий хлопок, шелк и эластичное
+									кружево, чтобы обеспечить максимальный комфорт и долговечность. Наше белье приятно к телу
+									и не теряет форму даже после множества стирок.
 								</div>
-								<div class="advantages__item3">
-									<div class="advantages__item-title">
-										3. Уникальный дизайн и стиль
-									</div>
-									<div class="advantages__item-text">
-										Наши коллекции создаются вдохновленными дизайнерами, которые сочетают современные тренды с
-										классической элегантностью. Вы найдете у нас как повседневные модели, так и изысканные
-										комплекты для особых случаев.
-									</div>
+							</div>
+							<div class="advantages__item2">
+								<div class="advantages__item-title">
+									2. Идеальная посадка и комфорт
 								</div>
-								<div class="advantages__item4">
-									<div class="advantages__item-title">
-										4. Забота о вашем здоровье
-									</div>
-									<div class="advantages__item-text">
-										Мы используем гипоаллергенные материалы и экологичные технологии производства, чтобы
-										заботиться не только о вашем комфорте, но и о здоровье. Наше белье безопасно для
-										чувствительной кожи.
-									</div>
+								<div class="advantages__item-text">
+									Каждый комплект разработан с учетом анатомических особенностей, чтобы подчеркнуть вашу
+									фигуру и обеспечить идеальную поддержку. Мы предлагаем широкий размерный ряд, чтобы каждая
+									женщина могла найти свой идеальный вариант.
+								</div>
+							</div>
+							<div class="advantages__item3">
+								<div class="advantages__item-title">
+									3. Уникальный дизайн и стиль
+								</div>
+								<div class="advantages__item-text">
+									Наши коллекции создаются вдохновленными дизайнерами, которые сочетают современные тренды с
+									классической элегантностью. Вы найдете у нас как повседневные модели, так и изысканные
+									комплекты для особых случаев.
+								</div>
+							</div>
+							<div class="advantages__item4">
+								<div class="advantages__item-title">
+									4. Забота о вашем здоровье
+								</div>
+								<div class="advantages__item-text">
+									Мы используем гипоаллергенные материалы и экологичные технологии производства, чтобы
+									заботиться не только о вашем комфорте, но и о здоровье. Наше белье безопасно для
+									чувствительной кожи.
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</main>
-			<footer class="site-footer">
-				<div class="site-footer__body">
-					<div class="site-footer__logo title">Nuit</div>
-					<div class="site-footer__order">
-						<a href="#" class="site-footer__subtitle">Mой заказ</a>
-						<br>
-						<a href="#" class="site-footer__list">условия возврата</a>
-						<br>
-						<a href="#" class="site-footer__list">условия доставки</a>
-						<br>
-						<a href="#" class="site-footer__list">условия доставки</a>
-					</div>
-					<div class="site-footer__services">
-						<a href="#" class="site-footer__subtitle">Мои услуги</a>
-						<br>
-						<a href="#" class="site-footer__list">найти магазин</a>
-						<br>
-						<a href="#" class="site-footer__list">программа лояльности</a>
-						<br>
-						<a href="#" class="site-footer__list">политика конфиденциальности</a>
-					</div>
-					<div class="site-footer__services2">
-						<a href="#" class="site-footer__subtitle">Мои услуги</a>
-						<br>
-						<a href="#" class="site-footer__list">карьера в Nuit</a>
-						<br>
-						<a href="#" class="site-footer__list">наша программа</a>
-						<br>
-						<a href="#" class="site-footer__list">отзывы</a>
-						<br>
-						<a href="#" class="site-footer__list">гарантия</a>
-					</div>
-					<div class="site-footer__sending-block">
-						<div class="site-footer__sending-title">подпишитесь на рассылку</div>
-						<form action="#">
-							<input class="site-footer__email" type="email" placeholder="email*">
-						</form>
-					</div>
-					<div class="site-footer__contact">
-						<div class="site-footer__contact-title">Наши социальные сети</div>
-						<div class="site-footer__contact-icons">
-							<a href="#" class="site-footer__contact-item">
-								<img class="site-footer__contact-icon" src="img/footer/1.svg" alt="телеграм">
-							</a>
-							<a href="#" class="site-footer__contact-item">
-								<img class="site-footer__contact-icon" src="img/footer/2.svg" alt="Вконтакте">
-							</a>
-							<a href="#" class="site-footer__contact-item">
-								<img class="site-footer__contact-icon" src="img/footer/3.svg" alt="инстаграм">
-							</a>
-							<a href="#" class="site-footer__contact-item">
-								<img class="site-footer__contact-icon" src="img/footer/4.svg" alt="пинтерест">
-							</a>
-							<a href="#" class="site-footer__contact-item">
-								<img class="site-footer__contact-icon" src="img/footer/5.svg" alt="фейсбук">
-							</a>
-						</div>
+			</div>
+		</main>
+		<footer class="site-footer">
+			<div class="site-footer__body">
+				<div class="site-footer__logo title">Nuit</div>
+				<div class="site-footer__order">
+					<a href="#" class="site-footer__subtitle">Mой заказ</a>
+					<br>
+					<a href="#" class="site-footer__list">условия возврата</a>
+					<br>
+					<a href="#" class="site-footer__list">условия доставки</a>
+					<br>
+					<a href="#" class="site-footer__list">условия доставки</a>
+				</div>
+				<div class="site-footer__services">
+					<a href="#" class="site-footer__subtitle">Мои услуги</a>
+					<br>
+					<a href="#" class="site-footer__list">найти магазин</a>
+					<br>
+					<a href="#" class="site-footer__list">программа лояльности</a>
+					<br>
+					<a href="#" class="site-footer__list">политика конфиденциальности</a>
+				</div>
+				<div class="site-footer__services2">
+					<a href="#" class="site-footer__subtitle">Мои услуги</a>
+					<br>
+					<a href="#" class="site-footer__list">карьера в Nuit</a>
+					<br>
+					<a href="#" class="site-footer__list">наша программа</a>
+					<br>
+					<a href="#" class="site-footer__list">отзывы</a>
+					<br>
+					<a href="#" class="site-footer__list">гарантия</a>
+				</div>
+				<div class="site-footer__sending-block">
+					<div class="site-footer__sending-title">подпишитесь на рассылку</div>
+					<form action="#">
+						<input class="site-footer__email" type="email" placeholder="email*">
+					</form>
+				</div>
+				<div class="site-footer__contact">
+					<div class="site-footer__contact-title">Наши социальные сети</div>
+					<div class="site-footer__contact-icons">
+						<a href="#" class="site-footer__contact-item">
+							<img class="site-footer__contact-icon" src="img/footer/1.svg" alt="телеграм">
+						</a>
+						<a href="#" class="site-footer__contact-item">
+							<img class="site-footer__contact-icon" src="img/footer/2.svg" alt="Вконтакте">
+						</a>
+						<a href="#" class="site-footer__contact-item">
+							<img class="site-footer__contact-icon" src="img/footer/3.svg" alt="инстаграм">
+						</a>
+						<a href="#" class="site-footer__contact-item">
+							<img class="site-footer__contact-icon" src="img/footer/4.svg" alt="пинтерест">
+						</a>
+						<a href="#" class="site-footer__contact-item">
+							<img class="site-footer__contact-icon" src="img/footer/5.svg" alt="фейсбук">
+						</a>
 					</div>
 				</div>
-			</footer>
-		</div>
+			</div>
+		</footer>
+
 	</div>
 </body>
 
