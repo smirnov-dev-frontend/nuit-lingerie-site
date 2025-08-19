@@ -137,20 +137,22 @@ h1, h2, h3, h4, h5, h6 {
   display: -ms-flexbox;
   display: flex;
   gap: 15px;
+  padding-right: 16px;
 }
 
+.start-block {
+  background-color: #767778;
+}
 .start-block__body {
   padding-top: 1px;
-  display: block;
-  margin: 0 auto;
-  width: 1160px;
   height: 874px;
   color: #E8E8E8;
   position: relative;
 }
 .start-block__title {
   font-size: 270px;
-  margin: 83px 0 0 0;
+  padding: 83px 0 0 0;
+  line-height: 318px;
 }
 .start-block__subtitle {
   font-family: "Poiret One", sans-serif;
@@ -159,22 +161,24 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 64px;
   width: 690px;
   position: relative;
-  z-index: 100;
+  z-index: 1;
+  word-spacing: -9px;
+  letter-spacing: -1px;
 }
 .start-block__image {
   display: inline-block;
-  width: 799px;
+  max-width: 799px;
   height: auto;
   position: absolute;
   top: 19px;
-  left: 361px;
+  right: -5px;
   z-index: 0;
 }
 
 .title {
-  font-family: Italiana;
+  font-family: "Italiana";
   position: relative;
-  z-index: 3;
+  z-index: 1;
 }
 
 .description-1__body {
@@ -540,9 +544,12 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #000;
 }
 
-.site-main {
+.main {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+}
+
+.description-1, .bestseller, .description-2, .sets, .advantages {
   display: none;
 }

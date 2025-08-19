@@ -1,17 +1,15 @@
 .start-block {
+      background-color: #767778;
       &__body {
             padding-top: 1px;
-            display: block;
-            margin: 0 auto;
-            width: 1160px;
             height: 874px;
             color: #E8E8E8;
             position: relative;
       }
 	&__title {
             font-size: 270px;
-            margin: 83px 0 0 0;
-
+            padding: 83px 0 0 0;
+            line-height: 318px;
 	}
 
       &__subtitle {
@@ -21,21 +19,23 @@
             font-size: 64px;
             width: 690px;
             position: relative;
-            z-index: 100;
+            z-index: 1;
+            word-spacing: -9px;
+            letter-spacing: -1px;
 	}
 
       &__image {
             display: inline-block;
-            width: 799px;
+            max-width: 799px;
             height: auto;
             position: absolute;
             top: 19px;
-            left: 361px;
+            right: -5px;
             z-index: 0;
 	}
 }
 .title {
-      font-family: Italiana;
+      font-family: 'Italiana';
       position: relative;
-      z-index: 3;
+      z-index: 1;
 }
