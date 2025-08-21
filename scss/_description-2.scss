@@ -2,29 +2,34 @@
       background-color: #C1C1C1;
       color: #2F2626;
       padding: 172px 0 136px;
-		&__row {
+      &__row {
          display: flex;
          align-items: center;
-		}
+	}
 
-		&__body {
+	&__body {
          flex: 1 1 auto;
-		}
+	}
 
-		&__title {
+	&__title {
          font-size: 96px;
-		}
+	}
 
-		&__text {
+	&__text {
          font-family: 'Poiret One', sans-serif;
          font-size: 32px;
          padding-right: 50px;
          word-spacing: -2px;
-		}
+	}
 
-		&__image {
+	&__image {
          flex: 0 0 505px;
-		}
+         width: 505px;
+         .img {
+            width: 100%;
+            height: auto;
+         }
+	}
 }
 
 
