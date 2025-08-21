@@ -1,54 +1,53 @@
 .advantages {
-
-		&__body {
-         background-color: #D9D9D9;
-         font-family: 'Poiret One', sans-serif;
-         height: 941px;
-         color: #2F2626;
+		&__item-title {
+         
 		}
 
-		&__content {
-         padding-top: 1px;
-         width: 1090px;
-         margin: 0 0 0 140px;
+      &__item-text {
+
+		}
+}
+
+
+.advantages {
+      background-color: #D9D9D9;
+      font-family: 'Poiret One', sans-serif;
+      color: #2F2626;
+      padding: 131px 0 157px;
+
+		&__column {
+         display: flex;
+         flex-direction: column;
+         gap: 53px;
 		}
 
 		&__title {
          font-size: 48px;
          line-height: 130%;
-         width: 1090px;
-         margin: 131px 0 53px 0;
          word-spacing: -7px;
 		}
-      &__items {
-         font-size: 0;
-      }
+
+		&__items {
+         display: flex;
+         row-gap: 56px;
+         column-gap: 100px;
+         flex-wrap: wrap;
+		}
+
+		&__item {
+         width: 43%;
+		}
 
 		&__item-title {
          font-size: 32px;
          word-spacing: -5px;
-         margin: 0 0 24px 0;
          text-shadow: 0 4px 4px #00000044;
+         padding-bottom: 24px;
 		}
 
-      &__item-text {
-         width: 468px;
-         margin-left: 5px;
+		&__item-text {
+         max-width: 420px;
          font-size: 24px;
          word-spacing: -5px;
 		}
-
-		&__item1, &__item2, &__item3, &__item4{
-         vertical-align: top;
-         display: inline-block;
-         width: 485px;
-		}
-      &__item1 {
-         margin: 0 112px 56px 0;
-      }
-
-		&__item3 {
-         margin: 0 112px 0 0;
-		}
 }
-
