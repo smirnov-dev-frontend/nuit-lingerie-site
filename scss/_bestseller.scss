@@ -1,6 +1,7 @@
 .bestseller {
    .container {
-      padding-bottom: 45px;
+      //padding-bottom: 45px; добавить когда сделаю увеличение картинок
+      max-width: calc(1395px + 40px);
    }
       padding: 203px 0 130px;
       background-color: #767778;
@@ -30,7 +31,7 @@
             //transform: scale(1.2); добавить позже
             .slider__text{
             visibility: visible;
-            font-size: calc(36px / 1.2);
+            //font-size: calc(36px / 1.2); добавить когда сделаю увеличение картинок
             }
          }
 		}

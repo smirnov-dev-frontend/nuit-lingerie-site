@@ -223,7 +223,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #767778;
 }
 .bestseller .container {
-  padding-bottom: 45px;
+  max-width: 1435px;
 }
 .bestseller__column {
   display: -webkit-box;
@@ -261,7 +261,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .slider__item:hover .slider__text {
   visibility: visible;
-  font-size: 30px;
 }
 .slider__image {
   border-radius: 8px;
