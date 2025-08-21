@@ -218,58 +218,62 @@ h1, h2, h3, h4, h5, h6 {
   word-spacing: -6px;
 }
 
-.bestseller__body {
-  height: 1168px;
-  width: 1395px;
-  margin: 0 auto;
-  padding-top: 1px;
+.bestseller {
+  padding: 203px 0 130px;
+  background-color: #767778;
+}
+.bestseller .container {
+  padding-bottom: 45px;
+}
+.bestseller__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .bestseller__title {
   font-family: "Poiret One", sans-serif;
   color: #E8E8E8;
   font-size: 96px;
-  margin: 203px 0 93px;
+  padding-bottom: 93px;
   text-align: center;
 }
 
 .slider {
-  width: 1395px;
-  height: 631px;
-  margin: 0 auto;
-  padding-top: 3px;
-  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .slider__item {
-  display: inline-block;
-  position: relative;
-  vertical-align: top;
-  margin-top: 53px;
-  border-radius: 8px;
-  overflow: hidden;
-  margin-right: 23px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 245px;
+          flex: 0 0 245px;
 }
-.slider__item:last-child {
-  margin-right: 0;
+.slider__item:hover .slider__text {
+  visibility: visible;
+  font-size: 30px;
 }
 .slider__image {
-  width: 245px;
-  height: auto;
-}
-.slider__image--hover {
-  width: 100%;
-  height: auto;
   border-radius: 8px;
-}
-.slider__item--hover {
-  width: 318px;
-  height: 631px;
-  margin-top: 0;
+  width: 100%;
 }
 .slider__text {
+  padding-top: 21px;
   font-family: "Poiret One", sans-serif;
   color: #E8E8E8;
   font-size: 36px;
-  margin: 21px 0 0 7px;
+  margin: 0 0 0 7px;
+  visibility: hidden;
 }
 
 .description-2__body {
@@ -546,6 +550,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   padding: 0 20px;
   border: 1px solid #000;
+  overflow: hidden;
 }
 
 .main {
@@ -554,6 +559,6 @@ h1, h2, h3, h4, h5, h6 {
           flex: 1 1 auto;
 }
 
-.bestseller, .description-2, .sets, .advantages {
+.description-2, .sets, .advantages {
   display: none;
 }
