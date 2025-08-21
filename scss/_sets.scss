@@ -1,80 +1,57 @@
 .sets {
-      &__body {
-         padding-top: 1px;
-         height: 1040px;
-         width: 1159px;
-         margin: 0 auto;
+      background-color: #767778;
+      padding: 120px 0;
+		&__row {
+         display: flex;
+         justify-content: space-between;
+		}
+
+		&__item {
          position: relative;
+         height: 810px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         &:hover .sets__image-wrapper {
+            height: 753px;
+         }
+         &:hover .sets__title {
+            visibility: visible;
+         }
+		}
+      &__image-wrapper {
+         overflow: hidden;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 580px;
+         transition: height 0.5s ease;
       }
-		&__item1 {
-         width: 561px;
-         height: 753px;
-         display: inline-block;
-         position: absolute;
-         top: 168px;
-         left: 0;
-		}
-      &__item2 {
-         width: 561px;
-         height: 753px;
-         display: inline-block;
-         position: absolute;
-         top: 168px;
-         right: 0;
-         padding-top: 1px;
-		}
 
-		&__image-1 {
-         position: absolute;
-         z-index: 0;
-
-		}
 
 		&__link {
-         display: inline-block;
-         position: relative;
-         z-index: 1;
-         color: #FFFFFF;
-         font-family: Italiana;
-         font-size: 55px;
-         width: 483px;
-         height: 91px;
-         line-height: 91px;
-         text-align: center;
-         top: 45%;
-         left:8.5%;
-         border-radius: 14px;
-         background-color: #d9d9d945;
-		}
-
-		&__image-2 {
+         white-space: nowrap;
          position: absolute;
-         top: 85px;
-         width: 561px;
-         display: inline-block;
-		}
-
-		&__link-2 {
-         color: #FFFFFF;
-         position: relative;
+         top: 50%;  // центрируем ссылку по исходной высоте wrapper'а
+         left: 50%;
+         transform: translate(-50%, -50%);
          z-index: 1;
+         color: #FFFFFF;
          font-family: Italiana;
          font-size: 55px;
-         display: inline-block;
-         width: 400px;
-         height: 91px;
-         line-height: 91px;
+         padding: 10px 8px;
          text-align: center;
-         top: 45%;
-         left:14%;
          border-radius: 14px;
          background-color: #d9d9d945;
 		}
 
 		&__title {
+         padding-top: 31px;
+         align-self: flex-start;
          font-size: 32px;
          font-family: 'Poiret One', sans-serif;
+         visibility: hidden;
          color: #FFFFFF;
-         margin: 952px 0 0 0;
 		}
-}
+   }
