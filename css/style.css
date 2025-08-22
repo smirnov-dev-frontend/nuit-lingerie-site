@@ -437,112 +437,127 @@ h1, h2, h3, h4, h5, h6 {
   word-spacing: -5px;
 }
 
-.site-footer__body {
-  height: 580px;
-  width: 1158px;
-  margin: 0 auto;
-  padding-top: 1px;
-  position: relative;
+.footer {
+  background-color: #767778;
+  padding: 42px 0;
+  color: #FFFFFF;
 }
-.site-footer__logo {
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 32px;
+  -webkit-column-gap: 39px;
+     -moz-column-gap: 39px;
+          column-gap: 39px;
+}
+.footer__sending {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.footer__sending-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 29px;
+}
+.footer__logo {
   font-size: 64px;
-  display: inline-block;
-  margin: 42px 221px 20px 0;
-  vertical-align: top;
+  color: #2F2626;
 }
-.site-footer__order {
-  vertical-align: top;
-  display: inline-block;
-  width: 228px;
-  margin: 67px 70px 0 0;
+.footer__sending-title {
+  font-family: "Poiret One", sans-serif;
+  font-size: 24px;
+  color: #FFFFFF;
 }
-.site-footer__subtitle {
+.footer__email {
+  color: #FFFFFF;
+  width: 281px;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #FFFFFF;
+  padding: 15px;
+  font-family: "Poiret One", sans-serif;
+}
+.footer__email::-webkit-input-placeholder {
+  color: #FFFFFF;
+  font-size: 26px;
+}
+.footer__email::-moz-placeholder {
+  color: #FFFFFF;
+  font-size: 26px;
+}
+.footer__email:-ms-input-placeholder {
+  color: #FFFFFF;
+  font-size: 26px;
+}
+.footer__email::-ms-input-placeholder {
+  color: #FFFFFF;
+  font-size: 26px;
+}
+.footer__email::placeholder {
+  color: #FFFFFF;
+  font-size: 26px;
+}
+.footer__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer__subtitle {
   font-size: 32px;
   font-family: "Poiret One", sans-serif;
   color: #2F2626;
   word-spacing: -5px;
-  display: inline-block;
-  margin: 0 0 45px 0;
 }
-.site-footer__list {
+.footer__list {
   font-family: "Poiret One", sans-serif;
   font-size: 20px;
   line-height: 200%;
   color: #FFFFFF;
 }
-.site-footer__services {
-  display: inline-block;
-  margin: 67px 70px 0 0;
-  vertical-align: top;
+.footer__list:first-child {
+  padding-top: 30px;
 }
-.site-footer__services2 {
-  vertical-align: top;
-  display: inline-block;
-  margin: 67px 0 0 0;
-}
-.site-footer__sending-block {
-  display: inline-block;
-  height: 127px;
-  width: 281px;
-  position: absolute;
-  top: 145px;
-  left: 0;
-}
-.site-footer__sending-title {
+.footer__contact-title {
   font-family: "Poiret One", sans-serif;
   font-size: 24px;
-  color: #FFFFFF;
-  margin: 0 0 29px 0;
+  padding: 0 0 38px 0;
 }
-.site-footer__email {
-  color: #FFFFFF;
-  display: inline-block;
-  width: 281px;
-  height: 52px;
-  font-size: 20px;
-  background-color: rgba(0, 0, 0, 0);
-  border: 1px solid #FFFFFF;
-  padding: 10px;
-  font-family: "Poiret One", sans-serif;
-}
-.site-footer__email::-webkit-input-placeholder {
-  color: #FFFFFF;
-  font-size: 28px;
-}
-.site-footer__email::-moz-placeholder {
-  color: #FFFFFF;
-  font-size: 28px;
-}
-.site-footer__email:-ms-input-placeholder {
-  color: #FFFFFF;
-  font-size: 28px;
-}
-.site-footer__email::-ms-input-placeholder {
-  color: #FFFFFF;
-  font-size: 28px;
-}
-.site-footer__email::placeholder {
-  color: #FFFFFF;
-  font-size: 28px;
-}
-.site-footer__contact {
-  display: inline-block;
-  height: 131px;
-  width: 394px;
-  font-size: 0;
-}
-.site-footer__contact-title {
-  font-family: "Poiret One", sans-serif;
-  font-size: 24px;
-  color: #FFFFFF;
-  margin: 0 0 38px 0;
-}
-.site-footer__contact-item {
-  display: inline-block;
-  margin: 0 37px 0 0;
-}
-.site-footer__contact-item:last-child {
-  margin-right: 0;
+.footer__contact-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 37px;
 }
 
 .wrapper {
