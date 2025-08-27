@@ -204,8 +204,10 @@
 						<div class="footer__logo title">Nuit</div>
 						<div class="footer__sending-block">
 							<div class="footer__sending-title">подпишитесь на рассылку</div>
-							<form action="#">
-								<input class="footer__email" type="email" placeholder="email*">
+							<form action="https://formspree.io/f/mqadkroa" method="POST" class="footer__form">
+								<input class="footer__email" type="email" name="email" placeholder="email*" required>
+								<button type="submit" class="footer__submit-btn"><span class="footer__submit-text">подписаться
+										на рассылку</span></button>
 							</form>
 						</div>
 					</div>
@@ -260,6 +262,7 @@
 			</div>
 		</footer>
 	</div>
+	<script src="js/form-subscribe.js"></script>
 </body>
 
 </html>
