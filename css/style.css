@@ -484,6 +484,19 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   color: #FFFFFF;
 }
+.footer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 26px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
 .footer__email {
   color: #FFFFFF;
   width: 281px;
@@ -512,6 +525,19 @@ h1, h2, h3, h4, h5, h6 {
 .footer__email::placeholder {
   color: #FFFFFF;
   font-size: 26px;
+}
+.footer__submit-btn {
+  background: rgba(217, 217, 217, 0.18);
+  border: 1px solid rgba(250, 250, 250, 0.8);
+  padding: 5px 20px;
+}
+.footer__submit-text {
+  font-family: "Poiret One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #FFFFFF;
 }
 .footer__information {
   display: -webkit-box;
