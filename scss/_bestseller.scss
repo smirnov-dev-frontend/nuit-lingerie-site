@@ -37,10 +37,16 @@
       flex: 0 0 245px;
       text-align: center;
       backface-visibility: hidden;
+      &:hover {
+         .slider__text {
+            visibility: visible;
+         }
+      }
     }
 
     &__image {
       width: 100%;
+      height: 446px;
       border-radius: 8px;
     }
 
