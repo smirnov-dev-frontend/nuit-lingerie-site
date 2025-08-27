@@ -4,44 +4,72 @@ const nextBtn = document.querySelector('.slider-btn--next');
 const gap = 30;
 let isAnimating = false;
 
-// исходные элементы
+// Исходные элементы и их порядок
+const originalItems = Array.from(slider.children);
+const totalItems = originalItems.length;
+
+// Сохраняем исходный порядок в data-атрибутах
+originalItems.forEach((item, index) => {
+   item.classList.add('original');
+   item.setAttribute('data-original-index', index);
+});
+
+// Создаем клоны в начале и конце
+originalItems.forEach(item => {
+   const cloneStart = item.cloneNode(true);
+   cloneStart.classList.add('clone');
+   slider.insertBefore(cloneStart, slider.firstChild);
+
+   const cloneEnd = item.cloneNode(true);
+   cloneEnd.classList.add('clone');
+   slider.appendChild(cloneEnd);
+});
+
+// Обновляем массив всех элементов
 let items = Array.from(slider.children);
-
-// дублируем первый и последний элемент
-const firstClone = items[0].cloneNode(true);
-const lastClone = items[items.length - 1].cloneNode(true);
-
-slider.appendChild(firstClone);
-slider.insertBefore(lastClone, slider.firstChild);
-
-// обновляем список
-items = Array.from(slider.children);
 let itemWidth = items[0].offsetWidth + gap;
 
-// начальная позиция
-let currentTranslate = -itemWidth;
+// Начальная позиция
+let currentIndex = totalItems;
+let currentTranslate = -itemWidth * currentIndex;
 slider.style.transform = `translateX(${currentTranslate}px)`;
+
+// Счетчики для отслеживания порядка
+let currentSequence = 0; // текущая позиция в последовательности
 
 function setPosition(transition = true) {
    slider.style.transition = transition ? 'transform 0.7s ease' : 'none';
    slider.style.transform = `translateX(${currentTranslate}px)`;
 }
 
+function updateItemsArray() {
+   items = Array.from(slider.children);
+}
+
 function moveNext() {
    if (isAnimating) return;
    isAnimating = true;
 
-   // заранее перемещаем первый элемент в конец, чтобы не было пустого места
-   slider.style.transition = 'none';
-   const first = slider.firstElementChild;
-   slider.appendChild(first);
-   // корректируем позицию, чтобы визуально ничего не изменилось
+   // Находим элемент для добавления справа (по порядку)
+   const originalElements = Array.from(slider.querySelectorAll('.original'));
+   const elementToAdd = originalElements.find(item =>
+      parseInt(item.getAttribute('data-original-index')) === currentSequence
+   );
+
+   if (elementToAdd) {
+      slider.appendChild(elementToAdd);
+      currentSequence = (currentSequence + 1) % totalItems;
+   }
+
+   updateItemsArray();
+
+   // Сразу корректируем позицию без анимации
    currentTranslate += itemWidth;
    setPosition(false);
 
-   // теперь плавно сдвигаем
+   // Плавный сдвиг на одну карточку
    requestAnimationFrame(() => {
-      slider.style.transition = 'transform 0.3s ease';
+      slider.style.transition = 'transform 0.7s ease';
       currentTranslate -= itemWidth;
       setPosition();
 
@@ -56,25 +84,40 @@ function movePrev() {
    if (isAnimating) return;
    isAnimating = true;
 
-   // заранее перемещаем последний элемент в начало
-   slider.style.transition = 'none';
-   const last = slider.lastElementChild;
-   slider.insertBefore(last, slider.firstElementChild);
-   currentTranslate -= itemWidth;
-   setPosition(false);
+   // ПРОСТОЙ ВАРИАНТ: сразу делаем анимацию сдвига
+   currentTranslate += itemWidth;
+   setPosition(true);
 
-   requestAnimationFrame(() => {
-      slider.style.transition = 'transform 0.3s ease';
-      currentTranslate += itemWidth;
-      setPosition();
+   slider.addEventListener('transitionend', function handler() {
+      slider.removeEventListener('transitionend', handler);
 
-      slider.addEventListener('transitionend', function handler() {
-         slider.removeEventListener('transitionend', handler);
-         isAnimating = false;
-      }, { once: true });
-   });
+      // После анимации перемещаем последний элемент в начало
+      const originalElements = Array.from(slider.querySelectorAll('.original'));
+      const lastOriginal = originalElements[originalElements.length - 1];
+
+      if (lastOriginal) {
+         slider.insertBefore(lastOriginal, slider.firstChild);
+         updateItemsArray();
+
+         // ОБНОВЛЯЕМ ПОСЛЕДОВАТЕЛЬНОСТЬ! Уменьшаем currentSequence
+         currentSequence = (currentSequence - 1 + totalItems) % totalItems;
+
+         // Корректируем позицию без анимации
+         currentTranslate -= itemWidth;
+         setPosition(false);
+      }
+
+      isAnimating = false;
+   }, { once: true });
 }
 
-// кнопки
+// Кнопки
 nextBtn.addEventListener('click', moveNext);
 prevBtn.addEventListener('click', movePrev);
+
+// Пересчет ширины при ресайзе
+window.addEventListener('resize', () => {
+   itemWidth = items[0].offsetWidth + gap;
+   currentTranslate = -itemWidth * currentIndex;
+   setPosition(false);
+});
