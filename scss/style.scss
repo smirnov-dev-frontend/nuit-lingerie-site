@@ -22,6 +22,28 @@
   margin: 0 auto;
   padding: 0 20px;
   overflow: hidden;
+  // Ноутбуки и маленькие десктопы
+  @media (max-width: 1200px) {
+    max-width: 992px;
+    //практически все блоки нормально, кроме sets и footer
+  }
+
+  // Планшеты
+  @media (max-width: 992px) {
+    max-width: 768px;
+  }
+
+  // Телефоны
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  // Телефоны (<576px)
+  @media (max-width: 576px) {
+    max-width: 100%;
+    padding: 0 15px;
+  }
 }
 
 .main {

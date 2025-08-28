@@ -1,9 +1,15 @@
 .bestseller {
   .container {
     max-width: calc(1395px + 40px);
+      @media (max-width: 576px) {
+         padding: 0;
+      }
   }
   padding: 203px 0 130px;
   background-color: #767778;
+  @media (max-width: 576px) {
+         padding: calc(36px + (36 * ((100vw - 320px)/256))) 0 calc(47px + (47 * ((100vw - 320px)/256)));
+      }
 
   &__column {
     display: flex;
@@ -17,6 +23,10 @@
     font-size: 96px;
     padding-bottom: 93px;
     text-align: center;
+    @media (max-width: 576px) {
+         font-size: calc(28px + (28 * ((100vw - 320px)/256)));
+         padding-bottom: calc(64px + (64 * ((100vw - 320px)/256)));
+      }
   }
 }
 
@@ -32,15 +42,22 @@
     justify-content: center;
     backface-visibility: hidden;
     transition: transform 0.3s ease;
+     @media (max-width: 576px) {
+         gap: calc(16px + (16 * ((100vw - 320px)/256)));
+      }
+    
 
     &__item {
       flex: 0 0 245px;
-      text-align: center;
       backface-visibility: hidden;
       &:hover {
          .slider__text {
             visibility: visible;
          }
+      }
+       @media (max-width: 576px) {
+         flex: 0 0 calc(142px + (142 * ((100vw - 320px)/256)));
+         text-align: start;
       }
     }
 
@@ -48,6 +65,12 @@
       width: 100%;
       height: 446px;
       border-radius: 8px;
+      @media (max-width: 576px) {
+         height: calc(236px + (236 * ((100vw - 320px)/256)));
+         img {
+          object-fit: cover;
+         }
+      }
     }
 
     &__text {
@@ -57,6 +80,11 @@
       font-size: 36px;
       margin-left: 7px;
       visibility: hidden;
+      @media (max-width: 576px) {
+         padding-top: calc(25px + (25 * ((100vw - 320px)/256)));
+         font-size: calc(14px + (14 * ((100vw - 320px)/256)));
+         margin-left: 0px;
+      }
     }
   }
 

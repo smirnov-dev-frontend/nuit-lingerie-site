@@ -3,17 +3,27 @@
       font-family: 'Poiret One', sans-serif;
       color: #2F2626;
       padding: 131px 0 157px;
+      @media (max-width: 576px) {
+      padding: calc(30px + (30 * ((100vw - 320px)/256))) 0;
+      }
 
 		&__column {
          display: flex;
          flex-direction: column;
          gap: 53px;
+         @media (max-width: 576px) {
+                  gap: calc(26px + (26 * ((100vw - 320px)/256)));
+            }
 		}
 
 		&__title {
-         font-size: 48px;
-         line-height: 130%;
-         word-spacing: -7px;
+                  font-size: 48px;
+                  line-height: 130%;
+                  word-spacing: -7px;
+                  @media (max-width: 576px) {
+                  font-size: calc(20px + (20 * ((100vw - 320px)/256)));
+                  word-spacing: -1px;
+            }
 		}
 
 		&__items {
@@ -21,10 +31,16 @@
          row-gap: 56px;
          column-gap: 100px;
          flex-wrap: wrap;
+         @media (max-width: 576px) {
+                  row-gap: calc(20px + (20 * ((100vw - 320px)/256)));
+            }
 		}
 
 		&__item {
          width: 43%;
+         @media (max-width: 576px) {
+                  width: 100%;
+            }
 		}
 
 		&__item-title {
@@ -32,11 +48,21 @@
          word-spacing: -5px;
          text-shadow: 0 4px 4px #00000044;
          padding-bottom: 24px;
+         @media (max-width: 576px) {
+                  font-size: calc(16px + (16 * ((100vw - 320px)/256)));
+                  padding-bottom: calc(18px + (18 * ((100vw - 320px)/256)));
+                  word-spacing: -1px;
+            }
 		}
 
 		&__item-text {
          max-width: 420px;
          font-size: 24px;
          word-spacing: -5px;
+         @media (max-width: 576px) {
+                  max-width: calc(250px + (250 * ((100vw - 320px)/256)));
+                  font-size: calc(14px + (14 * ((100vw - 320px)/256)));
+                  word-spacing: -1px;
+            }
 		}
 }

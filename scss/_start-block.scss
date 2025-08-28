@@ -1,41 +1,76 @@
 .start-block {
-      background-color: #767778;
-      &__body {
-            padding-top: 1px;
-            height: 874px;
-            color: #E8E8E8;
-            position: relative;
-      }
-	&__title {
-            font-size: 270px;
-            padding: 83px 0 0 0;
-            line-height: 318px;
-	}
+  background-color: #767778;
 
-      &__subtitle {
-            font-family: 'Poiret One', sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 64px;
-            width: 690px;
-            position: relative;
-            z-index: 1;
-            word-spacing: -9px;
-            letter-spacing: -1px;
-	}
+  .container {
+    position: relative;
+  }
 
-      &__image {
-            display: inline-block;
-            max-width: 799px;
-            height: auto;
-            position: absolute;
-            top: 19px;
-            right: -5px;
-            z-index: 0;
-	}
+  &__body {
+    padding-top: 1px;
+    height: 874px;
+    color: #E8E8E8;
+    position: relative;
+
+    @media (max-width: 576px) {
+      // height: 467px → 841px на 576px (примерно 1.8×)
+      height: calc(467px + (841 - 467) * ((100vw - 320px) / (576 - 320)));
+      position: static;
+      padding-top: calc(1px + (1 - 1) * ((100vw - 320px) / (576 - 320))); // если надо динамическое
+    }
+  }
+
+  &__title {
+    font-size: 270px;
+    padding: 83px 0 0 0;
+    line-height: 318px;
+
+    @media (max-width: 576px) {
+      // font-size: 64px → 64*1.8 ≈ 115px
+      font-size: calc(64px + (115 - 64) * ((100vw - 320px) / (576 - 320)));
+      line-height: calc(70px + (126 - 70) * ((100vw - 320px) / (576 - 320)));
+      padding-top: calc(330px + (594 - 330) * ((100vw - 320px) / (576 - 320)));
+    }
+  }
+
+  &__subtitle {
+    font-family: 'Poiret One', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+    width: 690px;
+    position: relative;
+    z-index: 1;
+    word-spacing: -9px;
+    letter-spacing: -1px;
+
+    @media (max-width: 576px) {
+      // font-size 20px → 36px
+      font-size: calc(20px + (36 - 20) * ((100vw - 320px) / (576 - 320)));
+      width: calc(228px + (410 - 228) * ((100vw - 320px) / (576 - 320)));
+      word-spacing: calc(-1px + (-2 + 1) * ((100vw - 320px) / (576 - 320)));
+      letter-spacing: calc(0px + (-1 - 0) * ((100vw - 320px) / (576 - 320)));
+    }
+  }
+
+  &__image {
+    display: inline-block;
+    max-width: 799px;
+    height: auto;
+    position: absolute;
+    top: 19px;
+    right: -5px;
+    z-index: 0;
+
+    @media (max-width: 576px) {
+      max-height: calc(467px + (841 - 467) * ((100vw - 320px) / (576 - 320)));
+      top: 0;
+      left: 0;
+    }
+  }
 }
+
 .title {
-      font-family: 'Italiana';
-      position: relative;
-      z-index: 1;
+  font-family: 'Italiana';
+  position: relative;
+  z-index: 1;
 }

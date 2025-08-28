@@ -1,32 +1,62 @@
 .description-1 {
-      padding: 160px 0 150px;
-      background-color: #E8E8E8;
-      &__row {
-         display: flex;
-         align-items: center;
-      } 
-		&__image {
-         flex: 0 0 auto;
-         max-width: 478px;
-         width: 100%;
-		}
+  padding: 160px 0 150px;
+  background-color: #E8E8E8;
+   @media (max-width: 576px) {
+      padding: calc(40px + (40 * ((100vw - 320px)/256))) 0 calc(55px + (55 * ((100vw - 320px)/256)));
+    }
+  &__row {
+    display: flex;
+    align-items: center;
 
-      &__body {
-         flex: 1 1 auto;
-         padding-right: 10px;
-         padding-left: 82px;
-      }
+    @media (max-width: 576px) {
+      flex-direction: column;
+      gap: calc(11px + (11 * ((100vw - 320px)/256))); // 11px → 19.8px
+    }
+  }
 
-		&__title {
-         font-size: 96px;
-         padding-bottom: 12px;
-		}
+  &__image {
+    flex: 0 0 auto;
+    max-width: 478px;
+    width: 100%;
 
-		&__text {
-         font-size: 32px;
-         font-family: 'Poiret One', sans-serif;
-         line-height: 130%;
-         word-spacing: -6px;
-		}
+    @media (max-width: 576px) {
+      max-width: calc(478px + (478 * ((100vw - 320px)/256))); // 478*1.8≈860px
+      padding: calc(0 + (0 * ((100vw - 320px)/256))); // если нужен динамический padding
+    }
+  }
+
+  &__body {
+    flex: 1 1 auto;
+    padding-right: 10px;
+    padding-left: 82px;
+
+    @media (max-width: 576px) {
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  &__title {
+    font-size: 96px;
+    padding-bottom: 12px;
+
+    @media (max-width: 576px) {
+      font-size: calc(48px + (48 * ((100vw - 320px)/256))); // 48→86px
+      padding-bottom: calc(12px + (12 * ((100vw - 320px)/256))); // 12→21px
+    }
+  }
+
+  &__text {
+    font-size: 32px;
+    font-family: 'Poiret One', sans-serif;
+    line-height: 130%;
+    word-spacing: -6px;
+
+    @media (max-width: 576px) {
+      font-size: calc(14px + (14 * ((100vw - 320px)/256))); // 14→25px
+      word-spacing: calc(-1px + (-1 * ((100vw - 320px)/256))); // -1→-1.8px
+      width: calc(251px + (251 * ((100vw - 320px)/256))); // 251→452px
+    }
+  }
 }
-

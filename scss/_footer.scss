@@ -1,108 +1,223 @@
 .footer {
-      background-color:#767778;
-      padding: 42px 0;
+  background-color: #767778;
+  padding: 42px 0;
+  color: #FFFFFF;
+
+  @media (max-width: 576px) {
+    padding: calc(19px + (19 * ((100vw - 320px)/256))) 0 calc(50px + (50 * ((100vw - 320px)/256)));
+  }
+
+  &__row {
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 32px;
+    column-gap: 39px;
+
+    @media (max-width: 576px) {
+      padding: calc(19px + (19 * ((100vw - 320px)/256))) 0 calc(50px + (50 * ((100vw - 320px)/256)));
+      flex-direction: column;
+    }
+  }
+
+  &__sending {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media (max-width: 576px) {
+      order: 3;
+    }
+  }
+
+  &__sending-block {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+  }
+
+  &__logo {
+    font-size: 64px;
+    color: #2F2626;
+
+    @media (max-width: 576px) {
+      display: none;
+    }
+  }
+
+  &__logo-mobile {
+    display: none;
+    font-size: calc(48px + (48 * ((100vw - 320px)/256)));
+    color: #2F2626;
+
+    @media (max-width: 576px) {
+      display: inline-block;
+    }
+  }
+
+  &__sending-title {
+    font-family: 'Poiret One', sans-serif;
+    font-size: 24px;
+    color: #FFFFFF;
+
+    @media (max-width: 576px) {
+      font-size: calc(20px + (20 * ((100vw - 320px)/256)));
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    align-items: flex-start;
+
+    @media (max-width: 576px) {
+      gap: 12px;
+    }
+   }
+   &__email {
       color: #FFFFFF;
-		&__row {
-         display: flex;
-         align-content: space-between;
-         flex-wrap: wrap;
-         row-gap: 32px;
-         column-gap: 39px;
-		}
-
-      &__sending {
-         display: flex;
-         flex-direction: column;
-         gap: 20px;
+      width: 281px;
+      font-size: 20px;
+      background-color: transparent;
+      border: 1px solid #FFFFFF;
+      padding: 15px;
+      font-family: 'Poiret One', sans-serif;
+      @media (max-width: 576px) {
+        width: calc(204px + (204 * ((100vw - 320px)/256)));
+        padding: 10px;
       }
 
-		&__sending-block {
-         display: flex;
-         flex-direction: column;
-         gap: 29px;
-
-		}
-
-		&__logo {
-         font-size: 64px;
-         color: #2F2626;
-		}
-
-		&__sending-title {
-         font-family: 'Poiret One', sans-serif;
-         font-size: 24px;
-         color: #FFFFFF;
-		}
-      &__form {
-         display: flex;
-         flex-direction: column;
-         gap: 26px;
-         align-items: flex-start;
+      &::placeholder {
+        color: #FFFFFF;
+        font-size: 26px;
       }
-		&__email {
-         color: #FFFFFF;
-         width: 281px;
-         font-size: 20px;
-         background-color: #00000000;
-         border: 1px solid #FFFFFF;
-         padding: 15px;
-         font-family: 'Poiret One', sans-serif;
-         &::placeholder {
-            color: #FFFFFF;
-            font-size: 26px;
-         }
-		}
-      &__submit-btn {
+}
+    &__submit-btn {
       background: rgba(217, 217, 217, 0.18);
       border: 1px solid rgba(250, 250, 250, 0.8);
-      padding: 5px 20px;
+      padding: calc(5px + (5 * ((100vw - 320px)/256))) calc(20px + (20 * ((100vw - 320px)/256)));
+    }
+
+    &__submit-text {
+      font-family: 'Poiret One';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 15px;
+      color: #FFFFFF;
+      @media (max-width: 576px) {
+        font-size: calc(13px + (13 * ((100vw - 320px)/256)));
       }
-      &__submit-text {
-         font-family: 'Poiret One';
-         font-style: normal;
-         font-weight: 400;
-         font-size: 13px;
-         line-height: 15px;
-         color: #FFFFFF;
+    }
+   
+  &__information {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-between;
+
+    @media (max-width: 576px) {
+      order: 2;
+      flex-direction: column;
+    }
+  }
+
+  &__lists {
+    display: flex;
+    flex-direction: column;
+   @media (max-width: 576px) {
+   width: 100%;        // вся ширина
+   background: none;   // убрать фон
+   padding: 0;
+   margin: 0;
+   display: block;      // меняем с flex на block
+
+      li {
+        width: 100%;
+        padding: 0 0 10px 0;
       }
 
-		&__information {
-         display: flex;
-         flex: 1 1 auto;
-         justify-content: space-between;
-		}
+    }
+    & li:first-child {
+      padding-top: 15px;
+    }
 
+    @media (max-width: 576px) {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.7s ease;
 
-      &__lists {
-         display: flex;
-         flex-direction: column;
+      &--open {
+        max-height: 500px;
       }
+    }
+  }
 
-		&__subtitle {
-         font-size: 32px;
-         font-family: 'Poiret One', sans-serif;
-         color: #2F2626;
-         word-spacing: -5px;
-		}
+  &__subtitle {
+    font-size: 32px;
+    font-family: 'Poiret One', sans-serif;
+    color: #2F2626;
+    word-spacing: -5px;
 
-		&__list {
-         font-family: 'Poiret One', sans-serif;
-         font-size: 20px;
-         line-height: 200%;
-         color: #FFFFFF;
-         &:first-child {
-            padding-top: 30px;
-         }
-		}
+    @media (max-width: 576px) {
+      display: block;
+      cursor: pointer;
+      position: relative;
+        width: 100%;
+    background: none;
+    padding: 0;
+    margin: 0;       // добавить, если есть внешние отступы
+    text-align: left;     // ключевой момент
+    word-spacing: normal; // сбросить сдвиг слов
+    font-size: calc(24px + (24 * ((100vw - 320px)/256)));
+    }
+  }
 
-		&__contact-title {
-         font-family: 'Poiret One', sans-serif;
-         font-size: 24px;
-         padding: 0 0 38px 0;
-		}
+  &__list {
+    font-family: 'Poiret One', sans-serif;
+    font-size: 20px;
+    line-height: 200%;
+    color: #FFFFFF;
+  }
 
-		&__contact-icons {
-         display: flex;
-         gap: 37px;
-		}
+  &__contact-title {
+    font-family: 'Poiret One', sans-serif;
+    font-size: 24px;
+    padding: 0 0 38px 0;
+
+    @media (max-width: 576px) {
+      font-size: calc(16px + (16 * ((100vw - 320px)/256)));
+      padding-bottom: calc(15px + (15 * ((100vw - 320px)/256)));
+    }
+  }
+
+  &__contact-icons {
+    display: flex;
+    gap: 37px;
+
+    @media (max-width: 576px) {
+      gap: calc(24px + (24 * ((100vw - 320px)/256)));
+
+      & img {
+        height: calc(33px + (33 * ((100vw - 320px)/256)));
+        width: auto;
+      }
+    }
+  }
+
+  &__contact {
+    @media (max-width: 576px) {
+      order: 4;
+    }
+  }
+
+  &__contact-item {
+    height: 100%;
+  }
+
+  &__column {
+    @media (max-width: 576px) {
+      width: 100%;
+    }
+  }
 }
