@@ -1,8 +1,15 @@
 const slider = document.querySelector('.slider');
 const prevBtn = document.querySelector('.slider-btn--prev');
 const nextBtn = document.querySelector('.slider-btn--next');
-const gap = 30;
 let isAnimating = false;
+
+// Функция для получения gap из CSS
+function getGap() {
+   // Получаем вычисленные стили слайдера
+   const computedStyle = window.getComputedStyle(slider);
+   // Получаем значение gap и преобразуем в число (убираем 'px')
+   return parseInt(computedStyle.gap) || 30; // fallback 30 если не получилось
+}
 
 // Исходные элементы и их порядок
 const originalItems = Array.from(slider.children);
@@ -27,6 +34,7 @@ originalItems.forEach(item => {
 
 // Обновляем массив всех элементов
 let items = Array.from(slider.children);
+let gap = getGap(); // Динамически получаем gap
 let itemWidth = items[0].offsetWidth + gap;
 
 // Начальная позиция
@@ -35,7 +43,7 @@ let currentTranslate = -itemWidth * currentIndex;
 slider.style.transform = `translateX(${currentTranslate}px)`;
 
 // Счетчики для отслеживания порядка
-let currentSequence = 0; // текущая позиция в последовательности
+let currentSequence = 0;
 
 function setPosition(transition = true) {
    slider.style.transition = transition ? 'transform 0.7s ease' : 'none';
@@ -46,9 +54,17 @@ function updateItemsArray() {
    items = Array.from(slider.children);
 }
 
+function updateSizes() {
+   gap = getGap(); // Обновляем gap
+   itemWidth = items[0].offsetWidth + gap;
+   currentTranslate = -itemWidth * currentIndex;
+}
+
 function moveNext() {
    if (isAnimating) return;
    isAnimating = true;
+
+   updateSizes(); // Обновляем размеры перед движением
 
    // Находим элемент для добавления справа (по порядку)
    const originalElements = Array.from(slider.querySelectorAll('.original'));
@@ -84,6 +100,8 @@ function movePrev() {
    if (isAnimating) return;
    isAnimating = true;
 
+   updateSizes(); // Обновляем размеры перед движением
+
    // ПРОСТОЙ ВАРИАНТ: сразу делаем анимацию сдвига
    currentTranslate += itemWidth;
    setPosition(true);
@@ -115,9 +133,14 @@ function movePrev() {
 nextBtn.addEventListener('click', moveNext);
 prevBtn.addEventListener('click', movePrev);
 
-// Пересчет ширины при ресайзе
+// Пересчет при ресайзе
 window.addEventListener('resize', () => {
-   itemWidth = items[0].offsetWidth + gap;
-   currentTranslate = -itemWidth * currentIndex;
+   updateSizes();
+   setPosition(false);
+});
+
+// Инициализация после загрузки
+window.addEventListener('load', () => {
+   updateSizes();
    setPosition(false);
 });
