@@ -1002,7 +1002,12 @@ body.lock {
 .footer__submit-btn {
   background: rgba(217, 217, 217, 0.18);
   border: 1px solid rgba(250, 250, 250, 0.8);
-  padding: calc(5px + 5 * (100vw - 320px) / 256) calc(20px + 20 * (100vw - 320px) / 256);
+  padding: 5px 20px;
+}
+@media (max-width: 576px) {
+  .footer__submit-btn {
+    padding: calc(5px + 5 * (100vw - 320px) / 256) calc(20px + 20 * (100vw - 320px) / 256);
+  }
 }
 .footer__submit-text {
   font-family: "Poiret One";
@@ -1080,6 +1085,7 @@ body.lock {
   font-family: "Poiret One", sans-serif;
   color: #2F2626;
   word-spacing: -5px;
+  background: none;
 }
 @media (max-width: 576px) {
   .footer__subtitle {
@@ -1087,7 +1093,6 @@ body.lock {
     cursor: pointer;
     position: relative;
     width: 100%;
-    background: none;
     padding: 0;
     margin: 0;
     text-align: left;
