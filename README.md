@@ -1,7 +1,7 @@
 # Интернет-магазин нижнего белья
 
-## 📌 Ссылка на GitHub
-[Смотреть проект на GitHub](https://github.com/smirnov-dev-frontend/nuit-lingerie-site)
+## 📌 Ссылка на GitHubPages
+[Смотреть проект](https://smirnov-dev-frontend.github.io/nuit-lingerie-site/))
 
 ## 🛠 Технологии
 
