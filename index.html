@@ -16,9 +16,11 @@
 			<div class="container">
 				<div class="header__row">
 					<!-- Меню бургер пока сделаю как просто ссылку-иконку-->
-					<a href="#" class="header__menu-burger icon-link">
-						<img src="img/header/icons/list.svg" alt="меню-бургер" class="header__icon-list">
-					</a>
+					<button class="header__menu-burger" aria-label="Открыть меню">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
 					<!--Выпадающий список с языками сделаю пока как просто блок-->
 					<div class="header__lang">
 						<span class="header__lang-name">rus</span>
@@ -205,6 +207,7 @@
 		<footer class="footer">
 			<div class="container">
 				<div class="footer__row">
+					<div class="footer__logo-mobile title">Nuit</div>
 					<div class="footer__sending">
 						<div class="footer__logo title">Nuit</div>
 						<div class="footer__sending-block">
@@ -218,29 +221,29 @@
 					</div>
 					<div class="footer__information">
 						<div class="footer__column">
-							<a href="#" class="footer__subtitle">Mой заказ</a>
-							<div class="footer__lists">
-								<a href="#" class="footer__list">условия возврата</a>
-								<a href="#" class="footer__list">условия доставки</a>
-								<a href="#" class="footer__list">условия доставки</a>
-							</div>
+							<button class="footer__subtitle">Mой заказ</button>
+							<ul class="footer__lists">
+								<li><a href="#" class="footer__list">условия возврата</a></li>
+								<li><a href="#" class="footer__list">условия доставки</a></li>
+								<li><a href="#" class="footer__list">условия доставки</a></li>
+							</ul>
 						</div>
 						<div class="footer__column">
-							<a href="#" class="footer__subtitle">Мои услуги</a>
-							<div class="footer__lists">
-								<a href="#" class="footer__list">найти магазин</a>
-								<a href="#" class="footer__list">программа лояльности</a>
-								<a href="#" class="footer__list">политика конфиденциальности</a>
-							</div>
+							<button class="footer__subtitle">Мои услуги</button>
+							<ul class="footer__lists">
+								<li><a href="#" class="footer__list">найти магазин</a></li>
+								<li><a href="#" class="footer__list">программа лояльности</a></li>
+								<li><a href="#" class="footer__list">политика конфиденциальности</a></li>
+							</ul>
 						</div>
 						<div class="footer__column">
-							<a href="#" class="footer__subtitle">Мои услуги</a>
-							<div class="footer__lists">
-								<a href="#" class="footer__list">карьера в Nuit</a>
-								<a href="#" class="footer__list">наша программа</a>
-								<a href="#" class="footer__list">отзывы</a>
-								<a href="#" class="footer__list">гарантия</a>
-							</div>
+							<button class="footer__subtitle">Мои услуги</button>
+							<ul class="footer__lists">
+								<li><a href="#" class="footer__list">карьера в Nuit</a></li>
+								<li><a href="#" class="footer__list">наша программа</a></li>
+								<li><a href="#" class="footer__list">отзывы</a></li>
+								<li><a href="#" class="footer__list">гарантия</a></li>
+							</ul>
 						</div>
 					</div>
 					<div class="footer__contact">
@@ -267,6 +270,8 @@
 			</div>
 		</footer>
 	</div>
+	<script src="js/menu.js"></script>
+	<script src="js/accordion.js"></script>
 	<script src="js/form-subscribe.js"></script>
 	<script src="js/slider.js"></script>
 </body>
